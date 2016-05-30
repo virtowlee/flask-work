@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+{% import "bootstrap/wtf.html" as wtf%}
+{% block title%}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+   <h1>the mode is {% if m %}{{ m }}{% else %}Stranger{% endif %}</h1>
+   <h2>the m is {% if n %}{{ n }}{% else %}Stranger{% endif %}</h2>
+</div>
+
+{% endblock %}
